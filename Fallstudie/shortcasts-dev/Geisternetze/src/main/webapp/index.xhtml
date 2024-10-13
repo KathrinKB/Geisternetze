@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+  <title>Ghost Net Fishing</title>
+</h:head>
+<h:body>
+  
+  <h1>Geisternetze</h1>
+  
+  <h:dataTable var="geisternetz" value="#{ghostNetFishing.toDo}"
+               >
+    <h:column>
+      <f:facet name="header">Koordinaten</f:facet>
+      <h:outputText value="#{geisternetz.laengengrad}+#{geisternetz.breitengrad}"/>
+    </h:column>
+    <h:column>
+      <f:facet name="header">geschätze Größe</f:facet>
+      <h:outputText value="#{geisternetz.groesse}"/>
+    </h:column>
+    <h:column>
+      <f:facet name="header">Status</f:facet>
+      <h:outputText value="#{geisternetz.status}"/>
+    </h:column>
+    
+    
+  </h:dataTable>
+  <p id="fussnote">Bitte beachten Sie: <br/> Diese Seite ist nur ein Entwurf!</p>
+</h:body>
+</html>
