@@ -19,6 +19,9 @@ public class GhostNetFishing
 		 * Hier werden die aktuellen Geisternetze eingefügt
 		 */
 
+    	toDo.add(new Geisternetz(25,35,20,"gemeldet"));
+    	toDo.add(new Geisternetz(20,58,25,"gemeldet"));
+    	
     }
 
 	public Collection<Geisternetz> getToDo()

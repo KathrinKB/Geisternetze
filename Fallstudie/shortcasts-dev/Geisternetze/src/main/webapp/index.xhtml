@@ -24,9 +24,23 @@
       <f:facet name="header">Status</f:facet>
       <h:outputText value="#{geisternetz.status}"/>
     </h:column>
-    
+    <h:column>
+     <h:form>
+        <h:commandLink value="zur Bergung melden" action="#{controller.startBergen()}">
+          
+        </h:commandLink>
+      </h:form>
+     </h:column>
     
   </h:dataTable>
+  
+  <h:form>
+  
+  <h:commandLink value="Geisternetz melden" 
+  				action="#{controller.startMelden()}"/>
+  				
+  </h:form>
+  
   <p id="fussnote">Bitte beachten Sie: <br/> Diese Seite ist nur ein Entwurf!</p>
 </h:body>
 </html>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+  <title>GhostNetFishing</title>
+</h:head>
+<h:body>
+  <h:outputText value="Neues Geisternetz melden"></h:outputText>
+  
+  <h:form>
+  <h:dataTable var="geisternetz" value="#{ghostNetFishing.toDo}"  
+               >
+    <h:column>
+      <f:facet name="header">Längengrad</f:facet>
+      <h:inputText value=""/>     
+    </h:column>
+    <h:column>
+      <f:facet name="header">Breitengrad</f:facet>
+      <h:inputText value=""/>
+    </h:column>
+    <h:column>
+      <f:facet name="header">Größe</f:facet>
+      <h:inputText value=""/>
+    </h:column>
+    
+  </h:dataTable>
+  </h:form>
+  
+  <h:form>
+  
+  
+  
+  <h:commandLink value="speichern" 
+  				action="#{controller.stopEdit()}"/>
+  				
+  </h:form>
+  
+</h:body>
+</html>
+
