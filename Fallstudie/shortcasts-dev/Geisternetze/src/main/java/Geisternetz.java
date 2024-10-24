@@ -13,13 +13,12 @@ public class Geisternetz
 
     private int groesse;
     
-    private String status;
+    private String status = "gemeldet";
 
-    public Geisternetz(int laengengrad, int breitengrad, int groesse, String status) {
+    public Geisternetz(int laengengrad, int breitengrad, int groesse) {
 		this.laengengrad = laengengrad;
 		this.breitengrad = breitengrad;
 		this.groesse = groesse;
-		this.status = status;
 	}
 
 	public int getLaengengrad() {
